@@ -302,9 +302,9 @@
                     "method": "GET",
                     "uri": "@{body('CrowdStrike_Base')?['FalconHost']}/devices/entities/devices/v1?ids=@{body('Parse_JSON_Get_device_id_response')?['resources']?[0]}",
                     "headers": {
-                      "Accept": "application/json",
+                      "Accept": "/json",
                       "Authorization": "@{body('CrowdStrike_Base')?['AccessToken']}",
-                      "Content-Type": "application/json"
+                      "Content-Type": "/json"
                     }
                   },
                   "runAfter": {},
@@ -1098,9 +1098,9 @@
                             "method": "GET",
                             "uri": "@{body('CrowdStrike_Base')?['FalconHost']}/real-time-response/entities/scripts/v1",
                             "headers": {
-                              "Accept": "application/json",
+                              "Accept": "/json",
                               "Authorization": "@{body('CrowdStrike_Base')?['AccessToken']}",
-                              "Content-Type": "application/json"
+                              "Content-Type": "/json"
                             }
                           },
                           "runAfter": {
@@ -1478,9 +1478,9 @@
                 "method": "GET",
                 "uri": "@{body('CrowdStrike_Base')?['FalconHost']}/devices/queries/devices/v1?filter=hostname:'@{body('Entities_-_Get_Hosts')?['Hosts']?[0]?['HostName']}'",
                 "headers": {
-                  "Accept": "application/json",
+                  "Accept": "/json",
                   "Authorization": "@{body('CrowdStrike_Base')?['AccessToken']}",
-                  "Content-Type": "application/json"
+                  "Content-Type": "/json"
                 }
               },
               "runAfter": {
@@ -1797,9 +1797,9 @@
                         "method": "POST",
                         "uri": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/devices/entities/devices-actions/v2?action_name=contain",
                         "headers": {
-                          "Accept": "application/json",
+                          "Accept": "/json",
                           "Authorization": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['AccessToken']}",
-                          "Content-Type": "application/json"
+                          "Content-Type": "/json"
                         },
                         "body": {
                           "action_parameters": [
@@ -1931,9 +1931,9 @@
                         "method": "POST",
                         "uri": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/devices/entities/devices-actions/v2?action_name=lift_containment",
                         "headers": {
-                          "Accept": "application/json",
+                          "Accept": "/json",
                           "Authorization": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['AccessToken']}",
-                          "Content-Type": "application/json"
+                          "Content-Type": "/json"
                         },
                         "body": {
                           "action_parameters": [
@@ -2063,9 +2063,9 @@
                                 "method": "POST",
                                 "uri": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/real-time-response/entities/admin-command/v1",
                                 "headers": {
-                                  "Accept": "application/json",
+                                  "Accept": "/json",
                                   "Authorization": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['AccessToken']}",
-                                  "Content-Type": "application/json"
+                                  "Content-Type": "/json"
                                 },
                                 "body": {
                                   "base_command": "runscript",
@@ -2319,7 +2319,7 @@
                             "method": "POST",
                             "uri": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/real-time-response/entities/sessions/v1",
                             "headers": {
-                              "": "application/json",
+                              "Content-Type": "application/json",
                               "Accept": "application/json",
                               "Authorization": "@{body('CrowdStrike_Base_call_after_SOC_responds')?['AccessToken']}"
                             },
