@@ -73,7 +73,7 @@ jobs:
     - name: Login to Azure (Attempt 3)
       continue-on-error: false
       id: login3
-      uses: azure/login@v2
+      uses: azure/login@v3
       if: ${{ steps.login2.outcome=='failure'  }}
       with:
         client-id: ${{ secrets.AZURE_SENTINEL_CLIENTID_01884893f642462dac26f5b1b087fee8 }}
@@ -84,10 +84,10 @@ jobs:
         enable-AzPSSession: true
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Deploy Content to Microsoft Sentinel
-      uses: azure/powershell@v2
+      uses: azure/powershell@v3
       with:
         azPSVersion: 'latest'
         inlineScript: |
