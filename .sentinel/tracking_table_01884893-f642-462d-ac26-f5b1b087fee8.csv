@@ -1,9 +1,9 @@
 FileName, CommitSha
-Tools/Create-Azure-Sentinel-Solution/V2/templating/baseMainTemplate.json,8a3fbfdd95ed6f176ae4e345ba205ea17f2f8415
-Tools/Create-Azure-Sentinel-Solution/templating/baseMainTemplate.json,8a3fbfdd95ed6f176ae4e345ba205ea17f2f8415
-Solutions/Azure Firewall/Workbooks/Azure Firewall Workbook - Structured Logs - Deployment Template.json,7bef8ba142f7856728897fb6f45ac5ddbbe8acf7
 Tools/Create-Azure-Sentinel-Solution/common/templating/baseMainTemplate.json,a51cf77b5d90989a2a93db3be2c5bc2ff6d93214
-Tools/Microsoft-Sentinel-Training-Lab/Artifacts/LinkedTemplates/workbook.json,705db27cc671bf85e01de7728530d8c62227697c
-Solutions/Azure Firewall/Workbooks/Azure Firewall Workbook - Deployment Template.json,54c5adcd10659224952600fd9fb8d70256750e0a
 Solutions/Training/Azure-Sentinel-Training-Lab/Artifacts/LinkedTemplates/workbook.json,705db27cc671bf85e01de7728530d8c62227697c
+Tools/Create-Azure-Sentinel-Solution/templating/baseMainTemplate.json,8a3fbfdd95ed6f176ae4e345ba205ea17f2f8415
+Tools/Create-Azure-Sentinel-Solution/V2/templating/baseMainTemplate.json,8a3fbfdd95ed6f176ae4e345ba205ea17f2f8415
+Solutions/Azure Firewall/Workbooks/Azure Firewall Workbook - Deployment Template.json,54c5adcd10659224952600fd9fb8d70256750e0a
+Tools/Microsoft-Sentinel-Training-Lab/Artifacts/LinkedTemplates/workbook.json,705db27cc671bf85e01de7728530d8c62227697c
+Solutions/Azure Firewall/Workbooks/Azure Firewall Workbook - Structured Logs - Deployment Template.json,7bef8ba142f7856728897fb6f45ac5ddbbe8acf7
 
